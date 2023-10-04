@@ -29,6 +29,7 @@ public class CalculatorGUI extends JFrame {
         JPanel buttonPanel = new JPanel(); //New button Panel Object
         buttonPanel.setLayout(new GridLayout(4, 4)); //Set the button Panel dimensions
 
+        //Array that hold the collection of button string labels
         String[] buttonLabels = {
                 "7", "8", "9", "/",
                 "4", "5", "6", "*",
@@ -36,12 +37,15 @@ public class CalculatorGUI extends JFrame {
                 "0", ".", "=", "+"
         };
 
+        //For each looping structure 
+        //which goes through the collection one object at a time
+        //Adding the button to the button panel object
         for (String label : buttonLabels) {
             JButton button = new JButton(label);
             button.addActionListener(new ButtonListener());
             buttonPanel.add(button);
         }
-
+        //Add the Button Panel object to the window frame
         add(buttonPanel, BorderLayout.CENTER);
     }
 
