@@ -95,9 +95,11 @@ public class CalculatorGUI extends JFrame {
     }
 
     public static void main(String[] args) {
+        //Lambda expression - anonymous no name needed
+        //parameter -> expression or {code block}
         SwingUtilities.invokeLater(() -> {
-            CalculatorGUI calculator = new CalculatorGUI();
-            calculator.setVisible(true);
+            CalculatorGUI calculator = new CalculatorGUI(); //calculator object
+            calculator.setVisible(true); //calculator object set visible
         });
     }
 }
