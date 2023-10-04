@@ -50,6 +50,7 @@ public class CalculatorGUI extends JFrame {
     }
 
     //ActionListener is the Interface
+    //This class handles button action events which would be click
     private class ButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
             String command = event.getActionCommand();
@@ -75,6 +76,8 @@ public class CalculatorGUI extends JFrame {
         }
     }
 
+    //Private method accepts three input arguments
+    //Returns a double type value
     private double performOperation(double num1, double num2, String operator) {
         switch (operator) {
             case "+":
