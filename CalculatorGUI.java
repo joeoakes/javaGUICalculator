@@ -49,6 +49,7 @@ public class CalculatorGUI extends JFrame {
         add(buttonPanel, BorderLayout.CENTER);
     }
 
+    //ActionListener is the Interface
     private class ButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
             String command = event.getActionCommand();
